@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#edebed , #fcfcfc);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100vw;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-title {
+  width: 100vw;
+  background-image: url(/assets/pencils.png), linear-gradient(to right, #eba22b , #ef7b48);
+  box-sizing: border-box;
+  background-size: 26vw, 100vw;
+  background-position: top right 20px, 0;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content-container {
+  width: 100vw;
+  max-width: 1024px;
+  padding: 10px 40px 30px; 
+  box-sizing: border-box;
+}
+
+.hero-title h1 {
+  max-width: 70%;
+  margin-bottom: 0;
+  font-size: 29px;
+}
+
+.hero-title p {
+  max-width: 75%;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.header-container{
+  width: 100%;
+  max-width: 1024px;
+  padding: 0px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row; 
+}
+
+.header-logo-image{
+  background-image: url('/assets/honeycomb-logo@2x.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+}
+
+.header-page-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-page-link {
+  margin: 0 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #ef7c46;
+}
+
+@media only screen and (max-width: 900px) {
+  .header-container {
+    padding: 10px 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  .header-logo-image {
+    width: 200px;
+    height: 60px;
+  }
+
+  .hero-title h1 {
+    font-size: 23px;
+  }
+
+  .hero-title p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .header-container {
+    padding: 10px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about, #code {
+    display: none;
+  }
+
+  .header-page-link {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .hero-title h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-title p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-title {
+    background-image: url(/assets/dontexist.png), linear-gradient(to right, #eba22b , #ef7b48);
+  }
+}
+
+h1, p {
+  font-family: sans-serif;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+main {
+  max-width: 1024px;
+  width: 100vw;
+  position: relative;
+  top: -20px;
+  background-color: white;
+  display: flex;
+  flex: 1;
+  border-radius: 15px;
+}
+
+footer {
+  height: 30px;
+  width: 100vw;
+}
+
+.flex-gap {
+  flex: 1;
+}

@@ -1,163 +1,120 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(#edebed , #fcfcfc);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: sans-serif;
 }
 
 header {
   width: 100vw;
-  height: 60px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
+  height: 120px;
+  background: white;
 }
 
-.hero-title {
-  width: 100vw;
-  background-image: url(/assets/pencils.png), linear-gradient(to right, #eba22b , #ef7b48);
-  box-sizing: border-box;
-  background-size: 26vw, 100vw;
-  background-position: top right 20px, 0;
-  background-repeat: no-repeat;
-  background-blend-mode: luminosity;
-  box-sizing: border-box;
-  color: white;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-content-container {
-  width: 100vw;
-  max-width: 1024px;
-  padding: 10px 40px 30px; 
-  box-sizing: border-box;
-}
-
-.hero-title h1 {
-  max-width: 70%;
-  margin-bottom: 0;
-  font-size: 29px;
-}
-
-.hero-title p {
-  max-width: 75%;
-  margin-top: 5px;
-  font-size: 16px;
-}
-
-.header-container{
+.container {
+  max-width: 1000px;
+  margin: auto;
+  height: 100%;
   width: 100%;
-  max-width: 1024px;
-  padding: 0px 40px;
+  padding: 20px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row; 
 }
 
-.header-logo-image{
-  background-image: url('/assets/honeycomb-logo@2x.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 200px;
-}
-
-.header-page-container {
+.header-container {
   display: flex;
   align-items: center;
 }
 
-.header-page-link {
-  margin: 0 20px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #ef7c46;
+.section-container {
+  max-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
 }
 
-@media only screen and (max-width: 900px) {
-  .header-container {
-    padding: 10px 40px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header {
-    height: 100px;
-  }
-
-  .header-logo-image {
-    width: 200px;
-    height: 60px;
-  }
-
-  .hero-title h1 {
-    font-size: 23px;
-  }
-
-  .hero-title p {
-    font-size: 15px;
-  }
+.half-section {
+  width: 50%;
 }
 
-@media only screen and (max-width: 645px) {
-  .header-container {
-    padding: 10px 10px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #about, #code {
-    display: none;
-  }
-
-  .header-page-link {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .hero-title h1 {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .hero-title p {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .hero-title {
-    background-image: url(/assets/dontexist.png), linear-gradient(to right, #eba22b , #ef7b48);
-  }
+section {
+  width: 100vw;
+  max-height: 650px;
 }
 
-h1, p {
-  font-family: sans-serif;
+section:nth-of-type(odd) {
+  background-color: #EA493D;
 }
 
-.selected {
+section:nth-of-type(even) h1, section:nth-of-type(even) h2 {
+  color: #EA493D;
+}
+
+section:nth-of-type(even) h3 {
+  color: #404040;
+}
+
+section:nth-of-type(even) p {
+  color: #404040;
+}
+
+.logo {
+  width: 215px;
+}
+
+h1, h2 {
+  font-family: 'Noto Serif';
+  margin: 0;
+  line-height: 70px;
+  color: white;
   font-weight: bold;
 }
 
-main {
-  max-width: 1024px;
-  width: 100vw;
-  position: relative;
-  top: -20px;
-  background-color: white;
-  display: flex;
-  flex: 1;
-  border-radius: 15px;
+h1 {
+  font-size: 60px;
 }
 
-footer {
-  height: 30px;
-  width: 100vw;
+h2 {
+  font-size: 40px;
 }
 
-.flex-gap {
-  flex: 1;
+p {
+  color: white;
+  margin: 8px 0;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+p:first-of-type {
+  margin-top: 15px;
+}
+
+p:last-of-type {
+  margin-bottom: 15px;
+}
+
+.basic-button {
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  background: #EA493D;
+  border: #ffffff 2px solid;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.solid-white {
+  border: #ffffff 2px solid;
+  color: #EA493D;
+  background: white;
+}
+
+.invert-white {
+  border: #EA493D 2px solid;
+  color: #EA493D;
+  background: white;
 }

@@ -1,7 +1,16 @@
+:root {
+  --primary-color: #f83d2f;
+}
+
+path { /*target the image with css*/
+  fill: var(--primary-color);
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #ffffff;
 }
 
 header {
@@ -11,7 +20,7 @@ header {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 950px;
   margin: auto;
   height: 100%;
   width: 100%;
@@ -22,10 +31,32 @@ header {
 .header-container {
   display: flex;
   align-items: center;
+  padding: 0;
+}
+
+.quote-group {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.quote-group-title {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.quote-group-main {
+}
+
+.quote-group-title h3 {
+  margin: 0;
 }
 
 .section-container {
-  max-height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,24 +64,19 @@ header {
 }
 
 .half-section {
-  width: 50%;
+  width: 100%;
 }
 
 section {
   width: 100vw;
-  max-height: 650px;
 }
 
 section:nth-of-type(odd) {
-  background-color: #EA493D;
+  background-color: var(--primary-color);
 }
 
 section:nth-of-type(even) h1, section:nth-of-type(even) h2 {
-  color: #EA493D;
-}
-
-section:nth-of-type(even) h3 {
-  color: #404040;
+  color: var(--primary-color);
 }
 
 section:nth-of-type(even) p {
@@ -64,13 +90,13 @@ section:nth-of-type(even) p {
 h1, h2 {
   font-family: 'Noto Serif';
   margin: 0;
-  line-height: 70px;
+  line-height: 55px;
   color: white;
   font-weight: bold;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 46px;
 }
 
 h2 {
@@ -80,23 +106,23 @@ h2 {
 p {
   color: white;
   margin: 8px 0;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
 }
 
 p:first-of-type {
-  margin-top: 15px;
+  margin-top: 0px;
 }
 
 p:last-of-type {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .basic-button {
   margin: 0;
   width: auto;
   overflow: visible;
-  background: #EA493D;
+  background: var(--primary-color);
   border: #ffffff 2px solid;
   border-radius: 4px;
   padding: 8px 10px;
@@ -109,12 +135,12 @@ p:last-of-type {
 
 .solid-white {
   border: #ffffff 2px solid;
-  color: #EA493D;
+  color: var(--primary-color);
   background: white;
 }
 
 .invert-white {
-  border: #EA493D 2px solid;
-  color: #EA493D;
+  border: var(--primary-color) 2px solid;
+  color: var(--primary-color);
   background: white;
 }
